@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="pwm_generator_system_wrapper.bit" key="pwm_generator_system_wrapper_hw_platform_0-bitFile"/>
+	<item value="Auto Detect" key="pwm_generator_system_wrapper_hw_platform_0-device"/>
+	<item value="false" key="pwm_generator_system_wrapper_hw_platform_0-partial_bit"/>
+	<item value="pwm_generator_system_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="" key="pwm_generator_system_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Local" key="pwm_generator_system_wrapper_hw_platform_0-target"/>
+</section>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# 
+# Start of session at: Fri Sep 21 11:55:30 2018
+# Process ID: 3584
+# Current directory: C:/EAAES/assignments/pwm_generation/pwm_generation.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/EAAES/assignments/pwm_generation/pwm_generation.sdk/webtalk/webtalk.log
+# Journal file: C:/EAAES/assignments/pwm_generation/pwm_generation.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

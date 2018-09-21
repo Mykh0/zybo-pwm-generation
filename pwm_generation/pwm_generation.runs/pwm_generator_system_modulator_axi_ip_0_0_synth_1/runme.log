@@ -1,0 +1,401 @@
+
+*** Running vivado
+    with args -log pwm_generator_system_modulator_axi_ip_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pwm_generator_system_modulator_axi_ip_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source pwm_generator_system_modulator_axi_ip_0_0.tcl -notrace
+Command: synth_design -top pwm_generator_system_modulator_axi_ip_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9232 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 294.527 ; gain = 84.055
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2048] function get_board_info_f does not always return a value [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/modulator_pkg.vhd:144]
+WARNING: [Synth 8-1565] actual for formal port div_factor_freqhigh is neither a static name nor a globally static expression [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/modulator_rtl.vhd:132]
+WARNING: [Synth 8-1565] actual for formal port div_factor_freqlow is neither a static name nor a globally static expression [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/modulator_rtl.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'pwm_generator_system_modulator_axi_ip_0_0' [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ip/pwm_generator_system_modulator_axi_ip_0_0/synth/pwm_generator_system_modulator_axi_ip_0_0.vhd:83]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter depth_g bound to: 8 - type: integer 
+	Parameter width_g bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'modulator_axi_ip_v1_0' declared at 'c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/hdl/modulator_axi_ip_v1_0.vhd:5' bound to instance 'U0' of component 'modulator_axi_ip_v1_0' [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ip/pwm_generator_system_modulator_axi_ip_0_0/synth/pwm_generator_system_modulator_axi_ip_0_0.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'modulator_axi_ip_v1_0' [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/hdl/modulator_axi_ip_v1_0.vhd:50]
+	Parameter depth_g bound to: 8 - type: integer 
+	Parameter width_g bound to: 12 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter depth_g bound to: 8 - type: integer 
+	Parameter width_g bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'modulator_axi_ip_v1_0_S00_AXI' declared at 'c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/hdl/modulator_axi_ip_v1_0_S00_AXI.vhd:6' bound to instance 'modulator_axi_ip_v1_0_S00_AXI_inst' of component 'modulator_axi_ip_v1_0_S00_AXI' [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/hdl/modulator_axi_ip_v1_0.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'modulator_axi_ip_v1_0_S00_AXI' [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/hdl/modulator_axi_ip_v1_0_S00_AXI.vhd:88]
+	Parameter depth_g bound to: 8 - type: integer 
+	Parameter width_g bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/hdl/modulator_axi_ip_v1_0_S00_AXI.vhd:220]
+INFO: [Synth 8-226] default block is never used [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/hdl/modulator_axi_ip_v1_0_S00_AXI.vhd:350]
+INFO: [Synth 8-638] synthesizing module 'modulator' [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/modulator_rtl.vhd:75]
+	Parameter design_setting_g bound to: 174'b000000000000000000000000111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001100 
+INFO: [Synth 8-638] synthesizing module 'frequency_trigger' [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/frequency_trigger_rtl.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'frequency_trigger' (1#1) [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/frequency_trigger_rtl.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'counter' [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/counter_rtl.vhd:65]
+	Parameter cnt_value_g bound to: 255 - type: integer 
+	Parameter depth_g bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (2#1) [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/counter_rtl.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'sine' [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/sine_rtl.vhd:68]
+	Parameter depth_g bound to: 8 - type: integer 
+	Parameter width_g bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sine' (3#1) [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/sine_rtl.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'pwm' [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/pwm_rtl.vhd:69]
+	Parameter width_g bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pwm' (4#1) [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/pwm_rtl.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'modulator' (5#1) [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/src/modulator_rtl.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'modulator_axi_ip_v1_0_S00_AXI' (6#1) [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/hdl/modulator_axi_ip_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'modulator_axi_ip_v1_0' (7#1) [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ipshared/4622/hdl/modulator_axi_ip_v1_0.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'pwm_generator_system_modulator_axi_ip_0_0' (8#1) [c:/EAAES/assignments/pwm_generation/pwm_generation.srcs/sources_1/bd/pwm_generator_system/ip/pwm_generator_system_modulator_axi_ip_0_0/synth/pwm_generator_system_modulator_axi_ip_0_0.vhd:83]
+WARNING: [Synth 8-3331] design modulator_axi_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design modulator_axi_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design modulator_axi_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design modulator_axi_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design modulator_axi_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design modulator_axi_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 330.859 ; gain = 120.387
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 330.859 ; gain = 120.387
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.212 . Memory (MB): peak = 625.723 ; gain = 0.148
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   4 Input     12 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module frequency_trigger 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module sine 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+Module pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module modulator_axi_ip_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design pwm_generator_system_modulator_axi_ip_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design pwm_generator_system_modulator_axi_ip_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design pwm_generator_system_modulator_axi_ip_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design pwm_generator_system_modulator_axi_ip_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design pwm_generator_system_modulator_axi_ip_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design pwm_generator_system_modulator_axi_ip_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module pwm_generator_system_modulator_axi_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module pwm_generator_system_modulator_axi_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module pwm_generator_system_modulator_axi_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module pwm_generator_system_modulator_axi_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module pwm_generator_system_modulator_axi_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/modulator_axi_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module pwm_generator_system_modulator_axi_ip_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------------------------------+--------------------------------------------------------------------+---------------+----------------+
+|Module Name                               | RTL Object                                                         | Depth x Width | Implemented As | 
++------------------------------------------+--------------------------------------------------------------------+---------------+----------------+
+|sine                                      | sin_ampl_c[0]                                                      | 256x13        | LUT            | 
+|pwm_generator_system_modulator_axi_ip_0_0 | U0/modulator_axi_ip_v1_0_S00_AXI_inst/pwmmodulator/sine/sine_s_reg | 256x12        | Block RAM      | 
++------------------------------------------+--------------------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/modulator_axi_ip_v1_0_S00_AXI_inst/pwmmodulator/sine/sine_s_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    70|
+|2     |LUT1     |   180|
+|3     |LUT2     |    16|
+|4     |LUT3     |    33|
+|5     |LUT4     |   142|
+|6     |LUT5     |     3|
+|7     |LUT6     |    46|
+|8     |RAMB18E1 |     1|
+|9     |FDRE     |   275|
+|10    |FDSE     |     2|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+------------------------------+------+
+|      |Instance                               |Module                        |Cells |
++------+---------------------------------------+------------------------------+------+
+|1     |top                                    |                              |   768|
+|2     |  U0                                   |modulator_axi_ip_v1_0         |   768|
+|3     |    modulator_axi_ip_v1_0_S00_AXI_inst |modulator_axi_ip_v1_0_S00_AXI |   768|
+|4     |      pwmmodulator                     |modulator                     |   539|
+|5     |        counterampl                    |counter                       |    18|
+|6     |        freq_ce                        |frequency_trigger             |   228|
+|7     |        pwmmodule                      |pwm                           |   268|
+|8     |          fsm_ce                       |frequency_trigger_0           |   197|
+|9     |        sine                           |sine                          |    25|
++------+---------------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 625.723 ; gain = 415.250
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 625.723 ; gain = 113.402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 625.723 ; gain = 415.250
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 625.723 ; gain = 408.266
+INFO: [Common 17-1381] The checkpoint 'C:/EAAES/assignments/pwm_generation/pwm_generation.runs/pwm_generator_system_modulator_axi_ip_0_0_synth_1/pwm_generator_system_modulator_axi_ip_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/EAAES/assignments/pwm_generation/pwm_generation.runs/pwm_generator_system_modulator_axi_ip_0_0_synth_1/pwm_generator_system_modulator_axi_ip_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 625.723 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 21 11:26:54 2018...

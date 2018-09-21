@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Sep 21 12:18:59 2018
+# Process ID: 8820
+# Current directory: C:/EAAES/assignments/pwm_generation/pwm_generation.runs/impl_1
+# Command line: vivado.exe -log pwm_generator_system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pwm_generator_system_wrapper.tcl -notrace
+# Log file: C:/EAAES/assignments/pwm_generation/pwm_generation.runs/impl_1/pwm_generator_system_wrapper.vdi
+# Journal file: C:/EAAES/assignments/pwm_generation/pwm_generation.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pwm_generator_system_wrapper.tcl -notrace
