@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/EAAES/assignments/pwm_generation/pwm_generation.xpr">
+<Project Version="7" Minor="17" Path="C:/Users/Mykho/Documents/repos/zybo-pwm-generation/pwm_generation/pwm_generation.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="ccfb80d5158e4822948244cb537c84b6"/>
@@ -20,7 +20,7 @@
     <Option Name="BoardPart" Val="digilentinc.com:zybo:part0:1.0"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../EEAES_coreIPS"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../EAAES/EEAES_coreIPS"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -60,22 +60,19 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="ip/pwm_generator_system_microblaze_0_axi_periph_0/pwm_generator_system_microblaze_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="ip/pwm_generator_system_axi_gpio_0_0/pwm_generator_system_axi_gpio_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="hdl/pwm_generator_system.hwdef"/>
-        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="hw_handoff/pwm_generator_system.hwh"/>
-        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="pwm_generator_system_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="ip/pwm_generator_system_auto_pc_0/pwm_generator_system_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="hw_handoff/pwm_generator_system_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="pwm_generator_system_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="ip/pwm_generator_system_xbar_1/pwm_generator_system_xbar_1.xci"/>
+        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="hw_handoff/pwm_generator_system.hwh"/>
+        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="ip/pwm_generator_system_auto_pc_0/pwm_generator_system_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="ip/pwm_generator_system_modulator_axi_ip_0_0/pwm_generator_system_modulator_axi_ip_0_0.xci">
           <Proxy FileSetName="pwm_generator_system_modulator_axi_ip_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="ip/pwm_generator_system_rst_ps7_0_100M_0/pwm_generator_system_rst_ps7_0_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="ip/pwm_generator_system_processing_system7_0_0/pwm_generator_system_processing_system7_0_0.xci">
-          <Proxy FileSetName="pwm_generator_system_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="hdl/pwm_generator_system.vhd"/>
-        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="ip/pwm_generator_system_xbar_1/pwm_generator_system_xbar_1.xci"/>
+        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="ip/pwm_generator_system_microblaze_0_axi_periph_0/pwm_generator_system_microblaze_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pwm_generator_system.bd" FileRelPathName="ip/pwm_generator_system_axi_gpio_0_0/pwm_generator_system_axi_gpio_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/pwm_generator_system/hdl/pwm_generator_system_wrapper.vhd">
         <FileInfo>
@@ -115,12 +112,6 @@
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
-    <FileSet Name="pwm_generator_system_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pwm_generator_system_processing_system7_0_0">
-      <Config>
-        <Option Name="TopModule" Val="pwm_generator_system_processing_system7_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="pwm_generator_system_modulator_axi_ip_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pwm_generator_system_modulator_axi_ip_0_0">
       <Config>
         <Option Name="TopModule" Val="pwm_generator_system_modulator_axi_ip_0_0"/>
@@ -155,14 +146,6 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="pwm_generator_system_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="pwm_generator_system_processing_system7_0_0" Part="xc7z010clg400-1" ConstrsSet="pwm_generator_system_processing_system7_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pwm_generator_system_processing_system7_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="pwm_generator_system_modulator_axi_ip_0_0_synth_1" Type="Ft3:Synth" SrcSet="pwm_generator_system_modulator_axi_ip_0_0" Part="xc7z010clg400-1" ConstrsSet="pwm_generator_system_modulator_axi_ip_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pwm_generator_system_modulator_axi_ip_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
@@ -185,21 +168,6 @@
         <Step Id="write_bitstream"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="pwm_generator_system_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pwm_generator_system_processing_system7_0_0" Description="Default settings for Implementation." SynthRun="pwm_generator_system_processing_system7_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="pwm_generator_system_modulator_axi_ip_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pwm_generator_system_modulator_axi_ip_0_0" Description="Default settings for Implementation." SynthRun="pwm_generator_system_modulator_axi_ip_0_0_synth_1" IncludeInArchive="false">
