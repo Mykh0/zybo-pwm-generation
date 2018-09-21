@@ -1,95 +1,266 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Root MajorVersion="0" MinorVersion="33">
-  <CompositeFile CompositeFileTopName="pwm_generator_system" CanBeSetAsTop="false" CanDisplayChildGraph="true">
-    <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1537521961"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1537521961"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1537521961"/>
-    <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip\pwm_generator_system_axi_gpio_0_0\pwm_generator_system_axi_gpio_0_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_gpio_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\pwm_generator_system_microblaze_0_axi_periph_0\pwm_generator_system_microblaze_0_axi_periph_0.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0_axi_periph"/>
-        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\pwm_generator_system_xbar_1\pwm_generator_system_xbar_1.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0_axi_periph/xbar"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="hdl\pwm_generator_system.vhd" Type="VHDL">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\pwm_generator_system_processing_system7_0_0\pwm_generator_system_processing_system7_0_0.xci" Type="IP">
-        <Instance HierarchyPath="processing_system7_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\pwm_generator_system_rst_ps7_0_100M_0\pwm_generator_system_rst_ps7_0_100M_0.xci" Type="IP">
-        <Instance HierarchyPath="rst_ps7_0_100M"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\pwm_generator_system_modulator_axi_ip_0_0\pwm_generator_system_modulator_axi_ip_0_0.xci" Type="IP">
-        <Instance HierarchyPath="modulator_axi_ip_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\pwm_generator_system_auto_pc_0\pwm_generator_system_auto_pc_0.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0_axi_periph/s00_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="pwm_generator_system_ooc.xdc" Type="XDC">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="OUT_OF_CONTEXT"/>
-      </File>
-      <File Name="hw_handoff\pwm_generator_system.hwh" Type="HwHandoff">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="hw_handoff\pwm_generator_system_bd.tcl">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="hdl\pwm_generator_system.hwdef">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-    </FileCollection>
-  </CompositeFile>
+<Root MajorVersion="0"
+		MinorVersion="33">
+	<CompositeFile CompositeFileTopName="pwm_generator_system"
+			CanBeSetAsTop="false"
+			CanDisplayChildGraph="true">
+		<Description>Composite Fileset</Description>
+		<Generation Name="SYNTHESIS"
+				State="STALE"
+				Timestamp="1537528484"/>
+		<Generation Name="IMPLEMENTATION"
+				State="STALE"
+				Timestamp="1537528484"/>
+		<Generation Name="SIMULATION"
+				State="STALE"
+				Timestamp="1537528484"/>
+		<FileCollection Name="SOURCES"
+				Type="SOURCES">
+			<File Name="ip\pwm_generator_system_axi_gpio_0_0\pwm_generator_system_axi_gpio_0_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="axi_gpio_0"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_microblaze_0_axi_periph_0\pwm_generator_system_microblaze_0_axi_periph_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="microblaze_0_axi_periph"/>
+				<Properties IsEditable="false"
+						IsVisible="false"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_xbar_1\pwm_generator_system_xbar_1.xci"
+					Type="IP">
+				<Instance HierarchyPath="microblaze_0_axi_periph/xbar"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="hdl\pwm_generator_system.vhd"
+					Type="VHDL">
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="false"
+						IsStatusTracked="false"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_processing_system7_0_0\pwm_generator_system_processing_system7_0_0.xci"
+					Type="IP">
+				<Properties IsEditable="false"
+						IsVisible="false"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_rst_ps7_0_100M_0\pwm_generator_system_rst_ps7_0_100M_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="rst_ps7_0_100M"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_modulator_axi_ip_0_0\pwm_generator_system_modulator_axi_ip_0_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="modulator_axi_ip_0"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_auto_pc_0\pwm_generator_system_auto_pc_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="microblaze_0_axi_periph/s00_couplers/auto_pc"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="pwm_generator_system_ooc.xdc"
+					Type="XDC">
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="false"
+						IsStatusTracked="false"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="OUT_OF_CONTEXT"/>
+			</File>
+			<File Name="hw_handoff\pwm_generator_system.hwh"
+					Type="HwHandoff">
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="false"
+						IsStatusTracked="false"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="HW_HANDOFF"/>
+			</File>
+			<File Name="hw_handoff\pwm_generator_system_bd.tcl">
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="false"
+						IsStatusTracked="false"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="HW_HANDOFF"/>
+			</File>
+			<File Name="hdl\pwm_generator_system.hwdef">
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="false"
+						IsStatusTracked="false"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="HW_HANDOFF"/>
+			</File>
+			<File Name="ip\pwm_generator_system_microblaze_0_0_2\pwm_generator_system_microblaze_0_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="microblaze_0"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_dlmb_v10_0_2\pwm_generator_system_dlmb_v10_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="microblaze_0_local_memory/dlmb_v10"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_ilmb_v10_0_2\pwm_generator_system_ilmb_v10_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="microblaze_0_local_memory/ilmb_v10"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_dlmb_bram_if_cntlr_0_2\pwm_generator_system_dlmb_bram_if_cntlr_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="microblaze_0_local_memory/dlmb_bram_if_cntlr"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_ilmb_bram_if_cntlr_0_2\pwm_generator_system_ilmb_bram_if_cntlr_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="microblaze_0_local_memory/ilmb_bram_if_cntlr"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_lmb_bram_0_2\pwm_generator_system_lmb_bram_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="microblaze_0_local_memory/lmb_bram"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_mdm_1_0_2\pwm_generator_system_mdm_1_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="mdm_1"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\pwm_generator_system_rst_DDR_ck_n_100M_0_2\pwm_generator_system_rst_DDR_ck_n_100M_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="rst_DDR_ck_n_100M"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+		</FileCollection>
+	</CompositeFile>
 </Root>
